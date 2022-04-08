@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct MapSwiftUIView: View {
-    @ObservedObject var mapSwiftUIViewModel : MapSwiftUIViewModel
+    var mapViewModel : MapViewModel
     
     var body: some View {
-        MapRepresentableSwiftUI(mapSwiftUIViewModel:mapSwiftUIViewModel)
+        MapRepresentableSwiftUI(mapViewModel:mapViewModel)
     }
 }
 

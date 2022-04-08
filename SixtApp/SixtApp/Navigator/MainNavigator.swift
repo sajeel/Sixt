@@ -34,8 +34,9 @@ import SixtFeed
             let vm = MainViewModel()
             show(target: MainViewController.createWith(navigator: self, storyboard: sender.storyboard ?? defaultStoryboard, viewModel: vm), sender:  sender)
         case let .Map(loader):
-            let vm = MapViewModel(loader: loader)
-            show(target: MapViewController.createWith(storyboard: sender.storyboard ?? defaultStoryboard, viewModel: vm), sender:  sender)
+            let resourceLoader = CarsMainResourceLoader(loader: loader)
+            let mapViewModel = MapViewModel(resourceLoader: resourceLoader)
+            show(target: MapViewController.createWith(viewModel: mapViewModel), sender:  sender)
         }
     }
     

@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 import SwiftUI
 import Then
-
+import Combine
+import SixtFeed
 class MainViewController: UIViewController {
 
     fileprivate var mainViewModel: MainViewModel?
@@ -39,9 +40,14 @@ class MainViewController: UIViewController {
         guard let mainViewModel = mainViewModel else {
             return nil
         }
-        let mapViewModel = MapViewModel(loader: mainViewModel.makeRemoteCarsLoader)
-        let mapSwiftUIViewModel  = MapSwiftUIViewModel(mapViewModel: mapViewModel, storyBoard: self._storyBoard!)
-        return FlippingViewModel(mapSwiftUIViewModel: mapSwiftUIViewModel)
+        
+        let loader = mainViewModel.makeRemoteCarsLoader
+        let resourceLoader = CarsMainResourceLoader(loader: loader )
+        let mapViewModel  = MapViewModel(resourceLoader:  resourceLoader)
+        let carsListingViewModel = CarsListingViewModel(resourceLoader: resourceLoader)
+        return FlippingViewModel(
+            mapViewModel: mapViewModel,
+            carsListingViewModel: carsListingViewModel)
     }
     
     private func addFlippingViewController(){

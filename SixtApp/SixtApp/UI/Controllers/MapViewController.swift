@@ -13,18 +13,17 @@ import Combine
 
 public final class MapViewController: UIViewController {//, ResourceLoadingView, ResourceErrorView {
     @IBOutlet private var mapView: MKMapView!
+    static private var defaultStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
-    
-    fileprivate var viewModel: MapViewModel<[RemoteCarItem]>!
-    fileprivate var navigator: MainNavigator!
+    fileprivate var viewModel: MapViewModel!
     private(set) public var errorView = ErrorView()
     private var cancellables: Set<AnyCancellable> = []
 
     public var onRefresh: (() -> Void)?
     
     
-    static func createWith(storyboard: UIStoryboard, viewModel: MapViewModel<[RemoteCarItem]>) -> MapViewController {
-        return storyboard.instantiateViewController(ofType: MapViewController.self).then { vc in
+    static func createWith(viewModel: MapViewModel) -> MapViewController {
+        return defaultStoryboard.instantiateViewController(ofType: MapViewController.self).then { vc in
             vc.viewModel = viewModel
         }
     }
@@ -53,7 +52,7 @@ public final class MapViewController: UIViewController {//, ResourceLoadingView,
     
     
     private func bindData(){
-        viewModel.$dataSource.sink { [weak self] cars in
+        viewModel.resourceLoader.$dataSource.sink { [weak self] cars in
             let annotations = self?.getAnnotationsFromModel(cars: cars)
             self?.mapView.addAnnotations(annotations ?? [])
         }
@@ -78,7 +77,7 @@ public final class MapViewController: UIViewController {//, ResourceLoadingView,
                                        coordinate: CLLocationCoordinate2DMake(25.786, 51.3245))
         mapView.addAnnotation(annotation)
         
-        viewModel.loadResource()
+        viewModel.resourceLoader.loadResource()
     }
     
     

@@ -33,11 +33,14 @@
 		389B27752800216900E7D3A3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B27742800216900E7D3A3 /* Navigator.swift */; };
 		389B2777280022F700E7D3A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B2776280022F700E7D3A3 /* MainViewController.swift */; };
 		389B277A280023E900E7D3A3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B2779280023E900E7D3A3 /* UIView+Constraints.swift */; };
-		389B277C2800343C00E7D3A3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B277B2800343C00E7D3A3 /* MapViewModel.swift */; };
+		389B277C2800343C00E7D3A3 /* CarsMainResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B277B2800343C00E7D3A3 /* CarsMainResourceLoader.swift */; };
 		389B277F280034F500E7D3A3 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B277E280034F500E7D3A3 /* CombineHelpers.swift */; };
 		389B27842800469E00E7D3A3 /* FlippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B27832800469E00E7D3A3 /* FlippingView.swift */; };
 		389B27872800480900E7D3A3 /* FlipEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B27862800480900E7D3A3 /* FlipEffect.swift */; };
-		38D10F1B280050BE00CA6756 /* MapSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F1A280050BE00CA6756 /* MapSwiftUIViewModel.swift */; };
+		38BA11BB2800DF6E0041B890 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 38BA11BA2800DF6E0041B890 /* URLImage */; };
+		38BA11BD2800DF6E0041B890 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 38BA11BC2800DF6E0041B890 /* URLImageStore */; };
+		38BA11BF2800E0B30041B890 /* CarsListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA11BE2800E0B30041B890 /* CarsListingViewModel.swift */; };
+		38D10F1B280050BE00CA6756 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F1A280050BE00CA6756 /* MapViewModel.swift */; };
 		38D10F1D280051BD00CA6756 /* FlippingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F1C280051BD00CA6756 /* FlippingViewModel.swift */; };
 		38D10F1F2800532700CA6756 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F1E2800532700CA6756 /* MainViewModel.swift */; };
 		38D10F21280058FF00CA6756 /* UICommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F20280058FF00CA6756 /* UICommon.swift */; };
@@ -108,11 +111,12 @@
 		389B27742800216900E7D3A3 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		389B2776280022F700E7D3A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		389B2779280023E900E7D3A3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
-		389B277B2800343C00E7D3A3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		389B277B2800343C00E7D3A3 /* CarsMainResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsMainResourceLoader.swift; sourceTree = "<group>"; };
 		389B277E280034F500E7D3A3 /* CombineHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		389B27832800469E00E7D3A3 /* FlippingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingView.swift; sourceTree = "<group>"; };
 		389B27862800480900E7D3A3 /* FlipEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipEffect.swift; sourceTree = "<group>"; };
-		38D10F1A280050BE00CA6756 /* MapSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftUIViewModel.swift; sourceTree = "<group>"; };
+		38BA11BE2800E0B30041B890 /* CarsListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListingViewModel.swift; sourceTree = "<group>"; };
+		38D10F1A280050BE00CA6756 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		38D10F1C280051BD00CA6756 /* FlippingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingViewModel.swift; sourceTree = "<group>"; };
 		38D10F1E2800532700CA6756 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		38D10F20280058FF00CA6756 /* UICommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICommon.swift; sourceTree = "<group>"; };
@@ -126,7 +130,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BA11BD2800DF6E0041B890 /* URLImageStore in Frameworks */,
 				38D10F2B28006B5100CA6756 /* SixtFeed.framework in Frameworks */,
+				38BA11BB2800DF6E0041B890 /* URLImage in Frameworks */,
 				1987FB2215CFA651A9DD5ECB /* libPods-SixtApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,10 +225,11 @@
 		389B274528000BAC00E7D3A3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				389B277B2800343C00E7D3A3 /* MapViewModel.swift */,
-				38D10F1A280050BE00CA6756 /* MapSwiftUIViewModel.swift */,
+				389B277B2800343C00E7D3A3 /* CarsMainResourceLoader.swift */,
+				38D10F1A280050BE00CA6756 /* MapViewModel.swift */,
 				38D10F1C280051BD00CA6756 /* FlippingViewModel.swift */,
 				38D10F1E2800532700CA6756 /* MainViewModel.swift */,
+				38BA11BE2800E0B30041B890 /* CarsListingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -344,7 +351,6 @@
 				389B26E928000AA200E7D3A3 /* Sources */,
 				389B26EA28000AA200E7D3A3 /* Frameworks */,
 				389B26EB28000AA200E7D3A3 /* Resources */,
-				0AF6CAB03B4DF60263962BCB /* [CP] Copy Pods Resources */,
 				38D10F2D28006B5100CA6756 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -352,6 +358,10 @@
 			dependencies = (
 			);
 			name = SixtApp;
+			packageProductDependencies = (
+				38BA11BA2800DF6E0041B890 /* URLImage */,
+				38BA11BC2800DF6E0041B890 /* URLImageStore */,
+			);
 			productName = SixtApp;
 			productReference = 389B26ED28000AA200E7D3A3 /* SixtApp.app */;
 			productType = "com.apple.product-type.application";
@@ -424,6 +434,9 @@
 				Base,
 			);
 			mainGroup = 389B26E428000AA200E7D3A3;
+			packageReferences = (
+				38BA11B92800DF6E0041B890 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 389B26EE28000AA200E7D3A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -463,23 +476,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AF6CAB03B4DF60263962BCB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SixtApp/Pods-SixtApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SixtApp/Pods-SixtApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SixtApp/Pods-SixtApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1D922FBE6A3B590F0A1CEAF6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -521,9 +517,10 @@
 				38D10F1D280051BD00CA6756 /* FlippingViewModel.swift in Sources */,
 				389B274E28000CBA00E7D3A3 /* ErrorView.swift in Sources */,
 				389B26F128000AA200E7D3A3 /* AppDelegate.swift in Sources */,
+				38BA11BF2800E0B30041B890 /* CarsListingViewModel.swift in Sources */,
 				389B276F280020CC00E7D3A3 /* Storyboard+.swift in Sources */,
 				389B275E2800198900E7D3A3 /* CarAnnotation.swift in Sources */,
-				389B277C2800343C00E7D3A3 /* MapViewModel.swift in Sources */,
+				389B277C2800343C00E7D3A3 /* CarsMainResourceLoader.swift in Sources */,
 				389B276D280020CC00E7D3A3 /* ImageView+setImage.swift in Sources */,
 				38D10F1F2800532700CA6756 /* MainViewModel.swift in Sources */,
 				389B26F328000AA200E7D3A3 /* SceneDelegate.swift in Sources */,
@@ -535,7 +532,7 @@
 				389B277A280023E900E7D3A3 /* UIView+Constraints.swift in Sources */,
 				389B27732800214F00E7D3A3 /* MainNavigator.swift in Sources */,
 				389B274C28000C4700E7D3A3 /* MapViewController.swift in Sources */,
-				38D10F1B280050BE00CA6756 /* MapSwiftUIViewModel.swift in Sources */,
+				38D10F1B280050BE00CA6756 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +870,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38BA11B92800DF6E0041B890 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38BA11BA2800DF6E0041B890 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38BA11B92800DF6E0041B890 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		38BA11BC2800DF6E0041B890 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38BA11B92800DF6E0041B890 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 389B26E528000AA200E7D3A3 /* Project object */;
 }

@@ -37,14 +37,13 @@ struct FlippingView: View {
     }
     
     @ViewBuilder func getListView() -> some View{
-        CarsListingView()
+        
+        CarsListingView(viewModel: flippingViewModel.carsListingViewModel)
     }
     
     
     @ViewBuilder func getMapView() -> some View {
-        MapSwiftUIView(mapSwiftUIViewModel: flippingViewModel.mapSwiftUIViewModel)
-//            .background(Color.yellow)
-//            .edgesIgnoringSafeArea(.all)
+        MapSwiftUIView(mapViewModel: flippingViewModel.mapViewModel)
     }
     
     
@@ -59,7 +58,7 @@ struct FlippingView: View {
                     }
                 }
                 .modifier(FlipEffect(flipped: $flipped, angle: showBack ? 180 : 0, axis: (x: 0, y: 1)))
-                .background(Color.green)
+//                .background(Color.green)
                 
                 .navigationBarTitle("Cars", displayMode: .inline)
                 .navigationBarBackButtonHidden(true)

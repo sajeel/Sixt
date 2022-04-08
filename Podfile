@@ -7,7 +7,7 @@ target 'SixtApp' do
    pod 'Then'
 	 pod 'RxSwift'
 	 pod 'RxCocoa'
-   pod 'DBDebugToolkit', :configurations => ['Debug']
+  # pod 'DBDebugToolkit', :configurations => ['Debug']
 
 
 	project 'SixtApp/SixtApp.xcodeproj'

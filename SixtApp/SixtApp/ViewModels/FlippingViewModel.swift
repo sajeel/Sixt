@@ -9,9 +9,11 @@ import Foundation
 import SwiftUI
 
 class FlippingViewModel: ObservableObject {
-   var mapSwiftUIViewModel : MapSwiftUIViewModel
+   var mapViewModel : MapViewModel
+    var carsListingViewModel : CarsListingViewModel
     
-    init(mapSwiftUIViewModel: MapSwiftUIViewModel ){
-        self.mapSwiftUIViewModel = mapSwiftUIViewModel
+    init(mapViewModel: MapViewModel , carsListingViewModel : CarsListingViewModel){
+        self.mapViewModel = mapViewModel
+        self.carsListingViewModel = carsListingViewModel
     }
 }

@@ -11,10 +11,10 @@ import SixtFeed
 
 struct MapRepresentableSwiftUI : UIViewControllerRepresentable {
     typealias UIViewControllerType = MapViewController
-    var mapSwiftUIViewModel: MapSwiftUIViewModel
+    var mapViewModel: MapViewModel
     
     func makeUIViewController(context: Context) -> MapViewController {
-        let mapViewController: MapViewController = MapViewController.createWith( storyboard: mapSwiftUIViewModel.storyBoard, viewModel: mapSwiftUIViewModel.mapViewModel)
+        let mapViewController: MapViewController = MapViewController.createWith(viewModel: mapViewModel)
         return mapViewController
     }
 
