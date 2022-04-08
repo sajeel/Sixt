@@ -51,8 +51,8 @@ import CoreLocation
 
 
  
-public struct RemoteCarItem: Decodable {
-    let id: String
+public struct RemoteCarItem: Decodable, Identifiable {
+    public let id: String
     let modelIdentifier: String
     let modelName: String
     let name: String
