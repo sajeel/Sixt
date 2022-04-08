@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1987FB2215CFA651A9DD5ECB /* libPods-SixtApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B0BD896DDE21FB40A29A06 /* libPods-SixtApp.a */; };
+		389B26F128000AA200E7D3A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B26F028000AA200E7D3A3 /* AppDelegate.swift */; };
+		389B26F328000AA200E7D3A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B26F228000AA200E7D3A3 /* SceneDelegate.swift */; };
+		389B26F828000AA200E7D3A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389B26F628000AA200E7D3A3 /* Main.storyboard */; };
+		389B26FA28000AA400E7D3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389B26F928000AA400E7D3A3 /* Assets.xcassets */; };
+		389B26FD28000AA400E7D3A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389B26FB28000AA400E7D3A3 /* LaunchScreen.storyboard */; };
+		389B270828000AA400E7D3A3 /* SixtAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B270728000AA400E7D3A3 /* SixtAppTests.swift */; };
+		389B271228000AA400E7D3A3 /* SixtAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B271128000AA400E7D3A3 /* SixtAppUITests.swift */; };
+		389B271428000AA400E7D3A3 /* SixtAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B271328000AA400E7D3A3 /* SixtAppUITestsLaunchTests.swift */; };
+		389B274C28000C4700E7D3A3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B274B28000C4700E7D3A3 /* MapViewController.swift */; };
+		389B274E28000CBA00E7D3A3 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B274D28000CBA00E7D3A3 /* ErrorView.swift */; };
+		389B275428000D0900E7D3A3 /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B275328000D0900E7D3A3 /* UIRefreshControl+Helpers.swift */; };
+		389B275628000D1E00E7D3A3 /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B275528000D1E00E7D3A3 /* UIView+Container.swift */; };
+		389B27592800106800E7D3A3 /* MKMapView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B27582800106800E7D3A3 /* MKMapView+Helpers.swift */; };
+		389B275B2800115800E7D3A3 /* CarAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B275A2800115800E7D3A3 /* CarAnnotationView.swift */; };
+		389B275E2800198900E7D3A3 /* CarAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B275D2800198900E7D3A3 /* CarAnnotation.swift */; };
+		389B276128001C2500E7D3A3 /* CarsListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B276028001C2500E7D3A3 /* CarsListingView.swift */; };
+		389B276328001C4700E7D3A3 /* MapRepresentableSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B276228001C4700E7D3A3 /* MapRepresentableSwiftUI.swift */; };
+		389B276628001CDD00E7D3A3 /* MapSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B276528001CDD00E7D3A3 /* MapSwiftUIView.swift */; };
+		389B276D280020CC00E7D3A3 /* ImageView+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B2769280020CC00E7D3A3 /* ImageView+setImage.swift */; };
+		389B276E280020CC00E7D3A3 /* Reachability+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B276A280020CC00E7D3A3 /* Reachability+.swift */; };
+		389B276F280020CC00E7D3A3 /* Storyboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B276B280020CC00E7D3A3 /* Storyboard+.swift */; };
+		389B27732800214F00E7D3A3 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B27722800214F00E7D3A3 /* MainNavigator.swift */; };
+		389B27752800216900E7D3A3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B27742800216900E7D3A3 /* Navigator.swift */; };
+		389B2777280022F700E7D3A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B2776280022F700E7D3A3 /* MainViewController.swift */; };
+		389B277A280023E900E7D3A3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B2779280023E900E7D3A3 /* UIView+Constraints.swift */; };
+		389B277C2800343C00E7D3A3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B277B2800343C00E7D3A3 /* MapViewModel.swift */; };
+		389B277F280034F500E7D3A3 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B277E280034F500E7D3A3 /* CombineHelpers.swift */; };
+		389B27842800469E00E7D3A3 /* FlippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B27832800469E00E7D3A3 /* FlippingView.swift */; };
+		389B27872800480900E7D3A3 /* FlipEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B27862800480900E7D3A3 /* FlipEffect.swift */; };
+		38D10F1B280050BE00CA6756 /* MapSwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F1A280050BE00CA6756 /* MapSwiftUIViewModel.swift */; };
+		38D10F1D280051BD00CA6756 /* FlippingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F1C280051BD00CA6756 /* FlippingViewModel.swift */; };
+		38D10F1F2800532700CA6756 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F1E2800532700CA6756 /* MainViewModel.swift */; };
+		38D10F21280058FF00CA6756 /* UICommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F20280058FF00CA6756 /* UICommon.swift */; };
+		38D10F2B28006B5100CA6756 /* SixtFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D10F2A28006B5100CA6756 /* SixtFeed.framework */; };
+		38D10F2C28006B5100CA6756 /* SixtFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38D10F2A28006B5100CA6756 /* SixtFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		389B270428000AA400E7D3A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 389B26E528000AA200E7D3A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 389B26EC28000AA200E7D3A3;
+			remoteInfo = SixtApp;
+		};
+		389B270E28000AA400E7D3A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 389B26E528000AA200E7D3A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 389B26EC28000AA200E7D3A3;
+			remoteInfo = SixtApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38D10F2D28006B5100CA6756 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38D10F2C28006B5100CA6756 /* SixtFeed.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		103036006ECF0BAB3A46B3B7 /* Pods-SixtApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtApp.release.xcconfig"; path = "Target Support Files/Pods-SixtApp/Pods-SixtApp.release.xcconfig"; sourceTree = "<group>"; };
+		18B0BD896DDE21FB40A29A06 /* libPods-SixtApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SixtApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		389B26ED28000AA200E7D3A3 /* SixtApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixtApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		389B26F028000AA200E7D3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		389B26F228000AA200E7D3A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		389B26F728000AA200E7D3A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		389B26F928000AA400E7D3A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		389B26FC28000AA400E7D3A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		389B26FE28000AA400E7D3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		389B270328000AA400E7D3A3 /* SixtAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		389B270728000AA400E7D3A3 /* SixtAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppTests.swift; sourceTree = "<group>"; };
+		389B270D28000AA400E7D3A3 /* SixtAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		389B271128000AA400E7D3A3 /* SixtAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppUITests.swift; sourceTree = "<group>"; };
+		389B271328000AA400E7D3A3 /* SixtAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		389B274B28000C4700E7D3A3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		389B274D28000CBA00E7D3A3 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		389B275328000D0900E7D3A3 /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
+		389B275528000D1E00E7D3A3 /* UIView+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
+		389B27582800106800E7D3A3 /* MKMapView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Helpers.swift"; sourceTree = "<group>"; };
+		389B275A2800115800E7D3A3 /* CarAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAnnotationView.swift; sourceTree = "<group>"; };
+		389B275D2800198900E7D3A3 /* CarAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAnnotation.swift; sourceTree = "<group>"; };
+		389B276028001C2500E7D3A3 /* CarsListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListingView.swift; sourceTree = "<group>"; };
+		389B276228001C4700E7D3A3 /* MapRepresentableSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRepresentableSwiftUI.swift; sourceTree = "<group>"; };
+		389B276528001CDD00E7D3A3 /* MapSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftUIView.swift; sourceTree = "<group>"; };
+		389B2769280020CC00E7D3A3 /* ImageView+setImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+setImage.swift"; sourceTree = "<group>"; };
+		389B276A280020CC00E7D3A3 /* Reachability+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reachability+.swift"; sourceTree = "<group>"; };
+		389B276B280020CC00E7D3A3 /* Storyboard+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+.swift"; sourceTree = "<group>"; };
+		389B27722800214F00E7D3A3 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		389B27742800216900E7D3A3 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		389B2776280022F700E7D3A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		389B2779280023E900E7D3A3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		389B277B2800343C00E7D3A3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		389B277E280034F500E7D3A3 /* CombineHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
+		389B27832800469E00E7D3A3 /* FlippingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingView.swift; sourceTree = "<group>"; };
+		389B27862800480900E7D3A3 /* FlipEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipEffect.swift; sourceTree = "<group>"; };
+		38D10F1A280050BE00CA6756 /* MapSwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftUIViewModel.swift; sourceTree = "<group>"; };
+		38D10F1C280051BD00CA6756 /* FlippingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingViewModel.swift; sourceTree = "<group>"; };
+		38D10F1E2800532700CA6756 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		38D10F20280058FF00CA6756 /* UICommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICommon.swift; sourceTree = "<group>"; };
+		38D10F28280068E900CA6756 /* libDBDebugToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDBDebugToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D10F2A28006B5100CA6756 /* SixtFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SixtFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0517104566ED4BE4799D69F /* Pods-SixtApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtApp.debug.xcconfig"; path = "Target Support Files/Pods-SixtApp/Pods-SixtApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		389B26EA28000AA200E7D3A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D10F2B28006B5100CA6756 /* SixtFeed.framework in Frameworks */,
+				1987FB2215CFA651A9DD5ECB /* libPods-SixtApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389B270028000AA400E7D3A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389B270A28000AA400E7D3A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2152FA7403690FB71939CC43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D10F2A28006B5100CA6756 /* SixtFeed.framework */,
+				38D10F28280068E900CA6756 /* libDBDebugToolkit.a */,
+				18B0BD896DDE21FB40A29A06 /* libPods-SixtApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		389B26E428000AA200E7D3A3 = {
+			isa = PBXGroup;
+			children = (
+				389B26EF28000AA200E7D3A3 /* SixtApp */,
+				389B270628000AA400E7D3A3 /* SixtAppTests */,
+				389B271028000AA400E7D3A3 /* SixtAppUITests */,
+				389B26EE28000AA200E7D3A3 /* Products */,
+				F4EA7A38D6B9E139D3866019 /* Pods */,
+				2152FA7403690FB71939CC43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		389B26EE28000AA200E7D3A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				389B26ED28000AA200E7D3A3 /* SixtApp.app */,
+				389B270328000AA400E7D3A3 /* SixtAppTests.xctest */,
+				389B270D28000AA400E7D3A3 /* SixtAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		389B26EF28000AA200E7D3A3 /* SixtApp */ = {
+			isa = PBXGroup;
+			children = (
+				38D10F2328005EF800CA6756 /* Shared Presentation */,
+				389B277D280034F500E7D3A3 /* Helpers */,
+				389B27712800214600E7D3A3 /* Navigator */,
+				389B275C2800197800E7D3A3 /* Models */,
+				389B274728000BFD00E7D3A3 /* UI */,
+				389B274528000BAC00E7D3A3 /* ViewModels */,
+				389B26F028000AA200E7D3A3 /* AppDelegate.swift */,
+				389B26F228000AA200E7D3A3 /* SceneDelegate.swift */,
+				389B26F628000AA200E7D3A3 /* Main.storyboard */,
+				389B26F928000AA400E7D3A3 /* Assets.xcassets */,
+				389B26FB28000AA400E7D3A3 /* LaunchScreen.storyboard */,
+				389B26FE28000AA400E7D3A3 /* Info.plist */,
+			);
+			path = SixtApp;
+			sourceTree = "<group>";
+		};
+		389B270628000AA400E7D3A3 /* SixtAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				389B270728000AA400E7D3A3 /* SixtAppTests.swift */,
+			);
+			path = SixtAppTests;
+			sourceTree = "<group>";
+		};
+		389B271028000AA400E7D3A3 /* SixtAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				389B271128000AA400E7D3A3 /* SixtAppUITests.swift */,
+				389B271328000AA400E7D3A3 /* SixtAppUITestsLaunchTests.swift */,
+			);
+			path = SixtAppUITests;
+			sourceTree = "<group>";
+		};
+		389B274528000BAC00E7D3A3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				389B277B2800343C00E7D3A3 /* MapViewModel.swift */,
+				38D10F1A280050BE00CA6756 /* MapSwiftUIViewModel.swift */,
+				38D10F1C280051BD00CA6756 /* FlippingViewModel.swift */,
+				38D10F1E2800532700CA6756 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		389B274728000BFD00E7D3A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				389B2768280020CC00E7D3A3 /* Cross Plateform extensions */,
+				389B274828000BFD00E7D3A3 /* Controllers */,
+				389B274928000BFD00E7D3A3 /* Views */,
+				38D10F20280058FF00CA6756 /* UICommon.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		389B274828000BFD00E7D3A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				389B274B28000C4700E7D3A3 /* MapViewController.swift */,
+				389B2776280022F700E7D3A3 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		389B274928000BFD00E7D3A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				389B275F28001C1500E7D3A3 /* SwiftUI */,
+				389B274A28000BFD00E7D3A3 /* Helpers */,
+				389B274D28000CBA00E7D3A3 /* ErrorView.swift */,
+				389B275A2800115800E7D3A3 /* CarAnnotationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		389B274A28000BFD00E7D3A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				389B275528000D1E00E7D3A3 /* UIView+Container.swift */,
+				389B275328000D0900E7D3A3 /* UIRefreshControl+Helpers.swift */,
+				389B27582800106800E7D3A3 /* MKMapView+Helpers.swift */,
+				389B2779280023E900E7D3A3 /* UIView+Constraints.swift */,
+				389B27862800480900E7D3A3 /* FlipEffect.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		389B275C2800197800E7D3A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				389B275D2800198900E7D3A3 /* CarAnnotation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		389B275F28001C1500E7D3A3 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				389B276028001C2500E7D3A3 /* CarsListingView.swift */,
+				389B276228001C4700E7D3A3 /* MapRepresentableSwiftUI.swift */,
+				389B276528001CDD00E7D3A3 /* MapSwiftUIView.swift */,
+				389B27832800469E00E7D3A3 /* FlippingView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		389B2768280020CC00E7D3A3 /* Cross Plateform extensions */ = {
+			isa = PBXGroup;
+			children = (
+				389B2769280020CC00E7D3A3 /* ImageView+setImage.swift */,
+				389B276A280020CC00E7D3A3 /* Reachability+.swift */,
+				389B276B280020CC00E7D3A3 /* Storyboard+.swift */,
+			);
+			path = "Cross Plateform extensions";
+			sourceTree = "<group>";
+		};
+		389B27712800214600E7D3A3 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				389B27722800214F00E7D3A3 /* MainNavigator.swift */,
+				389B27742800216900E7D3A3 /* Navigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		389B277D280034F500E7D3A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				389B277E280034F500E7D3A3 /* CombineHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		38D10F2328005EF800CA6756 /* Shared Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Shared Presentation";
+			sourceTree = "<group>";
+		};
+		F4EA7A38D6B9E139D3866019 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0517104566ED4BE4799D69F /* Pods-SixtApp.debug.xcconfig */,
+				103036006ECF0BAB3A46B3B7 /* Pods-SixtApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		389B26EC28000AA200E7D3A3 /* SixtApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 389B271728000AA400E7D3A3 /* Build configuration list for PBXNativeTarget "SixtApp" */;
+			buildPhases = (
+				1D922FBE6A3B590F0A1CEAF6 /* [CP] Check Pods Manifest.lock */,
+				389B26E928000AA200E7D3A3 /* Sources */,
+				389B26EA28000AA200E7D3A3 /* Frameworks */,
+				389B26EB28000AA200E7D3A3 /* Resources */,
+				0AF6CAB03B4DF60263962BCB /* [CP] Copy Pods Resources */,
+				38D10F2D28006B5100CA6756 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SixtApp;
+			productName = SixtApp;
+			productReference = 389B26ED28000AA200E7D3A3 /* SixtApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		389B270228000AA400E7D3A3 /* SixtAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 389B271A28000AA400E7D3A3 /* Build configuration list for PBXNativeTarget "SixtAppTests" */;
+			buildPhases = (
+				389B26FF28000AA400E7D3A3 /* Sources */,
+				389B270028000AA400E7D3A3 /* Frameworks */,
+				389B270128000AA400E7D3A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				389B270528000AA400E7D3A3 /* PBXTargetDependency */,
+			);
+			name = SixtAppTests;
+			productName = SixtAppTests;
+			productReference = 389B270328000AA400E7D3A3 /* SixtAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		389B270C28000AA400E7D3A3 /* SixtAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 389B271D28000AA400E7D3A3 /* Build configuration list for PBXNativeTarget "SixtAppUITests" */;
+			buildPhases = (
+				389B270928000AA400E7D3A3 /* Sources */,
+				389B270A28000AA400E7D3A3 /* Frameworks */,
+				389B270B28000AA400E7D3A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				389B270F28000AA400E7D3A3 /* PBXTargetDependency */,
+			);
+			name = SixtAppUITests;
+			productName = SixtAppUITests;
+			productReference = 389B270D28000AA400E7D3A3 /* SixtAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		389B26E528000AA200E7D3A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					389B26EC28000AA200E7D3A3 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					389B270228000AA400E7D3A3 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 389B26EC28000AA200E7D3A3;
+					};
+					389B270C28000AA400E7D3A3 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 389B26EC28000AA200E7D3A3;
+					};
+				};
+			};
+			buildConfigurationList = 389B26E828000AA200E7D3A3 /* Build configuration list for PBXProject "SixtApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 389B26E428000AA200E7D3A3;
+			productRefGroup = 389B26EE28000AA200E7D3A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				389B26EC28000AA200E7D3A3 /* SixtApp */,
+				389B270228000AA400E7D3A3 /* SixtAppTests */,
+				389B270C28000AA400E7D3A3 /* SixtAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		389B26EB28000AA200E7D3A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389B26FD28000AA400E7D3A3 /* LaunchScreen.storyboard in Resources */,
+				389B26FA28000AA400E7D3A3 /* Assets.xcassets in Resources */,
+				389B26F828000AA200E7D3A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389B270128000AA400E7D3A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389B270B28000AA400E7D3A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AF6CAB03B4DF60263962BCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SixtApp/Pods-SixtApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SixtApp/Pods-SixtApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SixtApp/Pods-SixtApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D922FBE6A3B590F0A1CEAF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SixtApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		389B26E928000AA200E7D3A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389B276E280020CC00E7D3A3 /* Reachability+.swift in Sources */,
+				389B27842800469E00E7D3A3 /* FlippingView.swift in Sources */,
+				389B27752800216900E7D3A3 /* Navigator.swift in Sources */,
+				389B277F280034F500E7D3A3 /* CombineHelpers.swift in Sources */,
+				389B276328001C4700E7D3A3 /* MapRepresentableSwiftUI.swift in Sources */,
+				389B276128001C2500E7D3A3 /* CarsListingView.swift in Sources */,
+				389B275628000D1E00E7D3A3 /* UIView+Container.swift in Sources */,
+				389B276628001CDD00E7D3A3 /* MapSwiftUIView.swift in Sources */,
+				389B27592800106800E7D3A3 /* MKMapView+Helpers.swift in Sources */,
+				38D10F1D280051BD00CA6756 /* FlippingViewModel.swift in Sources */,
+				389B274E28000CBA00E7D3A3 /* ErrorView.swift in Sources */,
+				389B26F128000AA200E7D3A3 /* AppDelegate.swift in Sources */,
+				389B276F280020CC00E7D3A3 /* Storyboard+.swift in Sources */,
+				389B275E2800198900E7D3A3 /* CarAnnotation.swift in Sources */,
+				389B277C2800343C00E7D3A3 /* MapViewModel.swift in Sources */,
+				389B276D280020CC00E7D3A3 /* ImageView+setImage.swift in Sources */,
+				38D10F1F2800532700CA6756 /* MainViewModel.swift in Sources */,
+				389B26F328000AA200E7D3A3 /* SceneDelegate.swift in Sources */,
+				389B275B2800115800E7D3A3 /* CarAnnotationView.swift in Sources */,
+				38D10F21280058FF00CA6756 /* UICommon.swift in Sources */,
+				389B275428000D0900E7D3A3 /* UIRefreshControl+Helpers.swift in Sources */,
+				389B27872800480900E7D3A3 /* FlipEffect.swift in Sources */,
+				389B2777280022F700E7D3A3 /* MainViewController.swift in Sources */,
+				389B277A280023E900E7D3A3 /* UIView+Constraints.swift in Sources */,
+				389B27732800214F00E7D3A3 /* MainNavigator.swift in Sources */,
+				389B274C28000C4700E7D3A3 /* MapViewController.swift in Sources */,
+				38D10F1B280050BE00CA6756 /* MapSwiftUIViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389B26FF28000AA400E7D3A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389B270828000AA400E7D3A3 /* SixtAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389B270928000AA400E7D3A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389B271428000AA400E7D3A3 /* SixtAppUITestsLaunchTests.swift in Sources */,
+				389B271228000AA400E7D3A3 /* SixtAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		389B270528000AA400E7D3A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 389B26EC28000AA200E7D3A3 /* SixtApp */;
+			targetProxy = 389B270428000AA400E7D3A3 /* PBXContainerItemProxy */;
+		};
+		389B270F28000AA400E7D3A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 389B26EC28000AA200E7D3A3 /* SixtApp */;
+			targetProxy = 389B270E28000AA400E7D3A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		389B26F628000AA200E7D3A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				389B26F728000AA200E7D3A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		389B26FB28000AA400E7D3A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				389B26FC28000AA400E7D3A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		389B271528000AA400E7D3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		389B271628000AA400E7D3A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		389B271828000AA400E7D3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0517104566ED4BE4799D69F /* Pods-SixtApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SixtApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sajjeel.SixtApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		389B271928000AA400E7D3A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103036006ECF0BAB3A46B3B7 /* Pods-SixtApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SixtApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sajjeel.SixtApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		389B271B28000AA400E7D3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sajjeel.SixtAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SixtApp.app/SixtApp";
+			};
+			name = Debug;
+		};
+		389B271C28000AA400E7D3A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sajjeel.SixtAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SixtApp.app/SixtApp";
+			};
+			name = Release;
+		};
+		389B271E28000AA400E7D3A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sajjeel.SixtAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SixtApp;
+			};
+			name = Debug;
+		};
+		389B271F28000AA400E7D3A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sajjeel.SixtAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SixtApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		389B26E828000AA200E7D3A3 /* Build configuration list for PBXProject "SixtApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				389B271528000AA400E7D3A3 /* Debug */,
+				389B271628000AA400E7D3A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		389B271728000AA400E7D3A3 /* Build configuration list for PBXNativeTarget "SixtApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				389B271828000AA400E7D3A3 /* Debug */,
+				389B271928000AA400E7D3A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		389B271A28000AA400E7D3A3 /* Build configuration list for PBXNativeTarget "SixtAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				389B271B28000AA400E7D3A3 /* Debug */,
+				389B271C28000AA400E7D3A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		389B271D28000AA400E7D3A3 /* Build configuration list for PBXNativeTarget "SixtAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				389B271E28000AA400E7D3A3 /* Debug */,
+				389B271F28000AA400E7D3A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 389B26E528000AA200E7D3A3 /* Project object */;
+}
