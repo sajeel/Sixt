@@ -69,9 +69,3 @@ struct CarsListingView: View {
         .edgesIgnoringSafeArea(.all)
     }
 }
-
-//struct CarsListingView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CarsListingView()
-//    }
-//}
