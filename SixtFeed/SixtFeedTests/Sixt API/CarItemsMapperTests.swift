@@ -39,18 +39,18 @@ class CarItemsMapperTests: XCTestCase {
     
     func test_map_deliversItemsOn200HTTPResponseWithJSONItems() throws {
         let item1 = makeItem(
-            id: UUID(),
-            imageURL: URL(string: "http://a-url.com")!)
+            id: "UUID",
+            carImageUrl: "http://a-url.com")
         
         let item2 = makeItem(
-            id: UUID(),
-            description: "a description",
-            location: "a location",
-            imageURL: URL(string: "http://another-url.com")!)
+            id: "UUID",
+            modelIdentifier: "a modelIdentifier",
+            modelName: "a modelName",
+            carImageUrl:"http://another-url.com")
         
         let json = makeItemsJSON([item1.json, item2.json])
         
-        let result = try RemoteCarItem.map(json, from: HTTPURLResponse(statusCode: 200))
+        let result = try CarItemMapper.map(json, from: HTTPURLResponse(statusCode: 200))
         
         XCTAssertEqual(result, [item1.model, item2.model])
     }
@@ -73,28 +73,32 @@ class CarItemsMapperTests: XCTestCase {
                           , longitude: Double? = nil
                           , innerCleanliness: String? = nil
                           , carImageUrl: String) -> (model: RemoteCarItem, json: [String: Any]) {
-        let item = RemoteCarItem(id: id, modelIdentifier: modelIdentifier ?? " a modelIdentifier", modelName: modelName ?? "a model name", name: name ?? "a name", make: make ? "a make", group: group ?? "a group" , color: color ?? "a color", series: series ?? "a series", fuelType: fuelType ?? "a fuel type", fuelLevel: fuelLevel ?? 0.0, transmission: transmission ?? "a tranmission", licensePlate: licensePlate ?? "a license plate", latitude: latitude ?? 0.0, longitude: longitude ?? 0.0, innerCleanliness: innerCleanliness ?? "a innercleanliness" , carImageUrl: carImageUrl )
+        let item = RemoteCarItem(id: id, modelIdentifier: modelIdentifier ?? " a modelIdentifier", modelName: modelName ?? "a model name", name: name ?? "a name", make: make ?? "a make", group: group ?? "a group" , color: color ?? "a color", series: series ?? "a series", fuelType: fuelType ?? "a fuel type", fuelLevel: fuelLevel ?? 0.0, transmission: transmission ?? "a tranmission", licensePlate: licensePlate ?? "a license plate", latitude: latitude ?? 0.0, longitude: longitude ?? 0.0, innerCleanliness: innerCleanliness ?? "a innercleanliness" , carImageUrl: carImageUrl )
         
-        let json = [
+        let object = [
             "id": id,
-            "modelIdentifier": modelIdentifier,
-            "modelName": modelName,
-            "name": name,
-            "make": make,
-            "group": group,
-            "color": color,
-            "series": series,
-            "fuelType": fuelType,
-            "fuelLevel": fuelLevel,
-            "transmission": transmission,
-            "licensePlate": licensePlate,
-            "latitude": latitude,
-            "longitude": longitude,
-            "innerCleanliness": innerCleanliness,
+            "modelIdentifier": modelIdentifier ?? " a modelIdentifier",
+            "modelName": modelName ?? "a model name",
+            "name": name ?? "a name",
+            "make": make ?? "a make",
+            "group": group ?? "a group",
+            "color": color ?? "a color",
+            "series": series ?? "a series",
+            "fuelType": fuelType ?? "a fuel type",
+            "fuelLevel": fuelLevel ?? 0.0,
+            "transmission": transmission ?? "a tranmission",
+            "licensePlate": licensePlate ?? "a license plate",
+            "latitude": latitude ?? 0.0,
+            "longitude": longitude ?? 0.0,
+            "innerCleanliness": innerCleanliness ?? "a innercleanliness",
             "carImageUrl": carImageUrl
-        ].compactMapValues { $0 }
+        ]
+            
+        let json =  object.compactMapValues { $0 }
         
         return (item, json)
     }
+    
+    
     
 }

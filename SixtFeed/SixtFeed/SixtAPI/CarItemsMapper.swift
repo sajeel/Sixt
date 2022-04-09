@@ -51,7 +51,7 @@ import CoreLocation
 
 
  
-public struct RemoteCarItem: Decodable, Identifiable {
+public struct RemoteCarItem: Decodable, Identifiable, Equatable {
     public let id: String
     let modelIdentifier: String
     let modelName: String
@@ -124,7 +124,7 @@ public final class CarItemMapper {
         let items: [RemoteCarItem]
     }
     
-    public enum Error: Swift.Error {
+    public enum RequestParsingError: Swift.Error, Equatable {
         case invalidRequest
         case invalidData
         case parsingKeyNotFound
@@ -134,9 +134,8 @@ public final class CarItemMapper {
     }
     
     public static func map(_ data: Data, from response: HTTPURLResponse) throws -> [RemoteCarItem] {
-        //guard response.isOK, let root = try? JSONDecoder().decode([Root.self], from: data) else {
         guard response.isOK else {
-            throw Error.invalidRequest
+            throw RequestParsingError.invalidData
         }
         
         do {
@@ -145,18 +144,22 @@ public final class CarItemMapper {
         } catch let DecodingError.keyNotFound(key, context) {
             print("Key '\(key)' not found:", context.debugDescription)
             print("codingPath:", context.codingPath)
-            throw Error.parsingKeyNotFound
+            return []
+//            throw RequestParsingError.parsingKeyNotFound
         } catch let DecodingError.valueNotFound(value, context) {
             print("Value '\(value)' not found:", context.debugDescription)
             print("codingPath:", context.codingPath)
-            throw Error.parsingvalueNotFound
+            return []
+//            throw RequestParsingError.parsingvalueNotFound
         } catch let DecodingError.typeMismatch(type, context)  {
             print("Type '\(type)' mismatch:", context.debugDescription)
             print("codingPath:", context.codingPath)
-            throw Error.parsingTypeMismatch
+            return []
+//            throw RequestParsingError.parsingTypeMismatch
         } catch {
             print("error: ", error)
-            throw Error.parsingGeneralError
+            return []
+//            throw RequestParsingError.parsingGeneralError
         }
         
         
