@@ -39,6 +39,7 @@ struct FlippingView: View {
     @ViewBuilder func getListView() -> some View{
         
         CarsListingView(viewModel: flippingViewModel.carsListingViewModel)
+            .edgesIgnoringSafeArea(.all)
     }
     
     

@@ -47,8 +47,7 @@ public struct CarCell : View {
             .cornerRadius(15)
             
         }
-        .frame(maxWidth: .infinity)
-        .background(Color.white)
+       
     }
 }
 
@@ -57,15 +56,17 @@ struct CarsListingView: View {
     @ObservedObject var viewModel : CarsListingViewModel
     
     var body: some View {
-        List(viewModel.cars) { model in
-            CarCell(name: model.getDescription(),
-                    imagePath: model.getImageUrl())
-            .background(Color.white)
+        List {
+            ForEach(viewModel.cars, id: \.id) { model in
+                CarCell(name: model.getDescription(),
+                        imagePath: model.getImageUrl())
+            }.listRowBackground(Color.green)
+            
         }
-        .padding()
         .background(Color.white)
         .cornerRadius(15)
-        
+        .padding(.top, 50)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
