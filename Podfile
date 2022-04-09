@@ -13,5 +13,14 @@ target 'SixtApp' do
 	project 'SixtApp/SixtApp.xcodeproj'
 
 
+  target 'SixtAppTests' do
+          platform :ios, '12.0'
+          pod 'Then'
+      end
+  
+  target 'SixtAppUITests' do
+          platform :ios, '12.0'
+          pod 'Then'
+      end
     
 end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1987FB2215CFA651A9DD5ECB /* libPods-SixtApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B0BD896DDE21FB40A29A06 /* libPods-SixtApp.a */; };
+		387D484C2801A45A00B24F43 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA11C02801A0A50041B890 /* MapViewControllerTests.swift */; };
+		387D484D2801A63B00B24F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389B26F628000AA200E7D3A3 /* Main.storyboard */; };
 		389B26F128000AA200E7D3A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B26F028000AA200E7D3A3 /* AppDelegate.swift */; };
 		389B26F328000AA200E7D3A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B26F228000AA200E7D3A3 /* SceneDelegate.swift */; };
 		389B26F828000AA200E7D3A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389B26F628000AA200E7D3A3 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		38D10F21280058FF00CA6756 /* UICommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D10F20280058FF00CA6756 /* UICommon.swift */; };
 		38D10F2B28006B5100CA6756 /* SixtFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D10F2A28006B5100CA6756 /* SixtFeed.framework */; };
 		38D10F2C28006B5100CA6756 /* SixtFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38D10F2A28006B5100CA6756 /* SixtFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E0AB46300CC413FC9E22067 /* libPods-SixtAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AD71FF7D66903A7A7EF7BB /* libPods-SixtAppTests.a */; };
+		D29E48690A97B84E05013608 /* libPods-SixtAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F65185E2F94F41F1002F85E8 /* libPods-SixtAppUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,13 +120,20 @@
 		389B27832800469E00E7D3A3 /* FlippingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingView.swift; sourceTree = "<group>"; };
 		389B27862800480900E7D3A3 /* FlipEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipEffect.swift; sourceTree = "<group>"; };
 		38BA11BE2800E0B30041B890 /* CarsListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListingViewModel.swift; sourceTree = "<group>"; };
+		38BA11C02801A0A50041B890 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
 		38D10F1A280050BE00CA6756 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		38D10F1C280051BD00CA6756 /* FlippingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingViewModel.swift; sourceTree = "<group>"; };
 		38D10F1E2800532700CA6756 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		38D10F20280058FF00CA6756 /* UICommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICommon.swift; sourceTree = "<group>"; };
 		38D10F28280068E900CA6756 /* libDBDebugToolkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDBDebugToolkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D10F2A28006B5100CA6756 /* SixtFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SixtFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74AE56F93CA2A0A51B5604F2 /* Pods-SixtAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtAppTests.release.xcconfig"; path = "Target Support Files/Pods-SixtAppTests/Pods-SixtAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		80AD71FF7D66903A7A7EF7BB /* libPods-SixtAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SixtAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8979B94D7FF32A667F211E85 /* Pods-SixtAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SixtAppUITests/Pods-SixtAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9368216E471208854C2B4DA8 /* Pods-SixtAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SixtAppUITests/Pods-SixtAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C80205F984F6514CD23277E7 /* Pods-SixtAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SixtAppTests/Pods-SixtAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0517104566ED4BE4799D69F /* Pods-SixtApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SixtApp.debug.xcconfig"; path = "Target Support Files/Pods-SixtApp/Pods-SixtApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F65185E2F94F41F1002F85E8 /* libPods-SixtAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SixtAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0AB46300CC413FC9E22067 /* libPods-SixtAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29E48690A97B84E05013608 /* libPods-SixtAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +173,8 @@
 				38D10F2A28006B5100CA6756 /* SixtFeed.framework */,
 				38D10F28280068E900CA6756 /* libDBDebugToolkit.a */,
 				18B0BD896DDE21FB40A29A06 /* libPods-SixtApp.a */,
+				80AD71FF7D66903A7A7EF7BB /* libPods-SixtAppTests.a */,
+				F65185E2F94F41F1002F85E8 /* libPods-SixtAppUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				389B270728000AA400E7D3A3 /* SixtAppTests.swift */,
+				38BA11C02801A0A50041B890 /* MapViewControllerTests.swift */,
 			);
 			path = SixtAppTests;
 			sourceTree = "<group>";
@@ -335,6 +351,10 @@
 			children = (
 				D0517104566ED4BE4799D69F /* Pods-SixtApp.debug.xcconfig */,
 				103036006ECF0BAB3A46B3B7 /* Pods-SixtApp.release.xcconfig */,
+				C80205F984F6514CD23277E7 /* Pods-SixtAppTests.debug.xcconfig */,
+				74AE56F93CA2A0A51B5604F2 /* Pods-SixtAppTests.release.xcconfig */,
+				9368216E471208854C2B4DA8 /* Pods-SixtAppUITests.debug.xcconfig */,
+				8979B94D7FF32A667F211E85 /* Pods-SixtAppUITests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -370,6 +390,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 389B271A28000AA400E7D3A3 /* Build configuration list for PBXNativeTarget "SixtAppTests" */;
 			buildPhases = (
+				56C7F917C31383B2A08D4669 /* [CP] Check Pods Manifest.lock */,
 				389B26FF28000AA400E7D3A3 /* Sources */,
 				389B270028000AA400E7D3A3 /* Frameworks */,
 				389B270128000AA400E7D3A3 /* Resources */,
@@ -388,6 +409,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 389B271D28000AA400E7D3A3 /* Build configuration list for PBXNativeTarget "SixtAppUITests" */;
 			buildPhases = (
+				0A162A992E1D874D3E7A87F7 /* [CP] Check Pods Manifest.lock */,
 				389B270928000AA400E7D3A3 /* Sources */,
 				389B270A28000AA400E7D3A3 /* Frameworks */,
 				389B270B28000AA400E7D3A3 /* Resources */,
@@ -463,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387D484D2801A63B00B24F43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +499,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0A162A992E1D874D3E7A87F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SixtAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1D922FBE6A3B590F0A1CEAF6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,6 +537,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SixtApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56C7F917C31383B2A08D4669 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SixtAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -541,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				389B270828000AA400E7D3A3 /* SixtAppTests.swift in Sources */,
+				387D484C2801A45A00B24F43 /* MapViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +828,7 @@
 		};
 		389B271B28000AA400E7D3A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C80205F984F6514CD23277E7 /* Pods-SixtAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -779,6 +848,7 @@
 		};
 		389B271C28000AA400E7D3A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74AE56F93CA2A0A51B5604F2 /* Pods-SixtAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -798,6 +868,7 @@
 		};
 		389B271E28000AA400E7D3A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9368216E471208854C2B4DA8 /* Pods-SixtAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -815,6 +886,7 @@
 		};
 		389B271F28000AA400E7D3A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8979B94D7FF32A667F211E85 /* Pods-SixtAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

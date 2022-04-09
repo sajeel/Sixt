@@ -12,7 +12,7 @@ import MapKit
 import Combine
 
 public final class MapViewController: UIViewController {//, ResourceLoadingView, ResourceErrorView {
-    @IBOutlet private var mapView: MKMapView!
+    @IBOutlet public var mapView: MKMapView!
     static private var defaultStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
     fileprivate var viewModel: MapViewModel!
@@ -44,8 +44,6 @@ public final class MapViewController: UIViewController {//, ResourceLoadingView,
           CarAnnotationView.self,
           forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
-        
-        loadInitialData()
         bindData()
                 
     }
@@ -72,11 +70,7 @@ public final class MapViewController: UIViewController {//, ResourceLoadingView,
     }
     
     
-    private func loadInitialData(){
-        let annotation = CarAnnotation(title: "Hello",
-                                       coordinate: CLLocationCoordinate2DMake(25.786, 51.3245))
-        mapView.addAnnotation(annotation)
-        
+    func loadInitialData(){
         viewModel.resourceLoader.loadResource()
     }
     

@@ -15,6 +15,7 @@ struct MapRepresentableSwiftUI : UIViewControllerRepresentable {
     
     func makeUIViewController(context: Context) -> MapViewController {
         let mapViewController: MapViewController = MapViewController.createWith(viewModel: mapViewModel)
+        mapViewController.loadInitialData()
         return mapViewController
     }
 
